@@ -1,0 +1,21 @@
+{
+  "name": "playwright-saucedemo",
+  "version": "1.0.0",
+  "description": "End-to-end UI test suite for saucedemo.com using Playwright + TypeScript and the Page Object Model",
+  "author": "Manish",
+  "license": "MIT",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "test:smoke": "playwright test --grep @smoke",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://www.saucedemo.com"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
